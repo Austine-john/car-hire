@@ -1,0 +1,83 @@
+.how__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+    margin-top: var(--space-3xl);
+    position: relative;
+}
+
+.how-step {
+    text-align: center;
+    position: relative;
+    padding: var(--space-xl) var(--space-md);
+}
+
+.how-step__num {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-md);
+}
+
+.how-step__icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--space-lg);
+    border-radius: 50%;
+    background: var(--color-accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+    transition: all var(--transition-base);
+}
+
+.how-step:hover .how-step__icon {
+    background: var(--color-accent);
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-glow);
+}
+
+.how-step__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.how-step__desc {
+    font-size: 0.88rem;
+    color: var(--color-gray-400);
+    line-height: 1.7;
+}
+
+.how-step__connector {
+    position: absolute;
+    top: calc(var(--space-xl) + 0.75rem + var(--space-md) + 32px);
+    right: -10%;
+    width: 20%;
+    height: 2px;
+    background: repeating-linear-gradient(90deg,
+            var(--color-accent) 0,
+            var(--color-accent) 6px,
+            transparent 6px,
+            transparent 12px);
+}
+
+@media (max-width: 900px) {
+    .how__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .how-step__connector {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .how__grid {
+        grid-template-columns: 1fr;
+    }
+}

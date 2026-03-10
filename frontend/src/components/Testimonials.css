@@ -1,0 +1,64 @@
+.testimonials__card {
+    max-width: 700px;
+    margin: var(--space-3xl) auto var(--space-xl);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.testimonials__quote-icon {
+    color: rgba(255, 107, 0, 0.3);
+    margin-bottom: var(--space-lg);
+}
+
+.testimonials__stars {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: var(--space-lg);
+}
+
+.testimonials__text {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.9;
+    font-style: italic;
+    margin-bottom: var(--space-xl);
+}
+
+.testimonials__author {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.testimonials__author strong {
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.testimonials__author span {
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+.testimonials__dots {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+}
+
+.testimonials__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all var(--transition-base);
+    cursor: pointer;
+}
+
+.testimonials__dot--active {
+    background: var(--color-accent);
+    width: 28px;
+    border-radius: var(--radius-full);
+}
