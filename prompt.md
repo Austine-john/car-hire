@@ -1,1 +1,1 @@
-you are an intermediate developer, you want to create a car rental application built on react for the frontend and django for the backend, use this url(https://gowheels.co.ke/) to look at the desired design, attempt to clone this application 
+
